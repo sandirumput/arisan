@@ -1,0 +1,49 @@
+=== Arisan — demo output (captured 19 Nov 2026, WIB) ===
+
+--- 1. Engine tests: cargo test (real Ootle engine, in-process) ---
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.75s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test default_settlement_expels_defaulter_refunds_payers_and_continues ... ok
+test contribute_rules_are_enforced ... ok
+test circle_dissolves_when_too_few_members_remain ... ok
+test constructor_validates_its_arguments ... ok
+test early_recipient_who_defaults_cannot_take_anything_more ... ok
+test payout_emits_pot_paid_event ... ok
+test join_rules_are_enforced ... ok
+test full_circle_completes_and_everyone_ends_whole ... ok
+test payout_requires_everyone_paid ... ok
+test start_requires_two_members_and_the_organiser ... ok
+test settle_default_rejects_when_everyone_paid ... ok
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 28.02s
+
+--- 2. Simulation parity tests: node --test app/sim.test.mjs ---
+✔ full circle completes and everyone ends whole (3.593954ms)
+✔ payout emits a PotPaid event (0.6969ms)
+✔ join rules are enforced (1.354195ms)
+✔ start requires two members and the organiser (0.528279ms)
+✔ contribute rules are enforced (0.74809ms)
+✔ payout requires everyone paid (0.488375ms)
+✔ default settlement expels the defaulter, refunds payers, and continues (1.056679ms)
+✔ settleDefault rejects when everyone paid (0.505793ms)
+✔ circle dissolves when too few members remain (0.595354ms)
+✔ constructor validates its arguments (0.789138ms)
+✔ early recipient who defaults cannot take anything more (0.62171ms)
+ℹ pass 11
+ℹ fail 0
+
+--- 3. Release WASM build ---
+-rwxrwx--- 2 root nogroup 149855 Nov 19 07:45 target/wasm32-unknown-unknown/release/arisan.wasm
+
+--- 4. Guided walkthrough (same script as the demo page's ▶ button) ---
+rejected as expected: Contribution must be exactly the circle amount
+round 0 pot: 40 TARI -> payout: {"recipient":"Ana","amount":40000000}
+settle default: {"expelled":1,"remaining":3}
+round done: Budi 30 TARI
+round done: Citra 30 TARI
+completed: true
+final balances: {
+  Ana: '1010 TARI',
+  Budi: '1000 TARI',
+  Citra: '1000 TARI',
+  Dewi: '990 TARI'
+}
