@@ -13,9 +13,9 @@ bottom of this file). Everything else is ready to paste as-is.
 
 ## Arisan — rotating savings circles on Tari Ootle
 
-**Code (MIT):** [FILL IN — GitHub repo URL, e.g. https://github.com/sandirumput/arisan]
+**Code (MIT):** https://github.com/sandirumput/arisan
 
-**Play demo (no wallet):** [FILL IN — hosted demo URL, e.g. https://sandirumput.github.io/arisan/]
+**Play demo (no wallet):** https://sandirumput.github.io/arisan/
 
 **Tari payment address:** [FILL IN — your Tari (L1 Minotari) address]
 
