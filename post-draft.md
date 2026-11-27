@@ -19,7 +19,7 @@ bottom of this file). Everything else is ready to paste as-is.
 
 **Tari payment address:** 124Y6c9juhdo6CCk3z4KkJFDyvTsacsN17rFTMhjxuCzdx7iiK4wqRZL8czskx7yUsiP5ww1CGHhydYTZvA2piLoLpC
 
-**Announcement:** [FILL IN — link to your Bluesky / Reddit / Medium / YouTube announcement post]
+**Announcement:** https://medium.com/@sandirumput0415/arisan-rotating-savings-circles-on-tari-ootle-d200c54b742a
 
 **What it is**
 
