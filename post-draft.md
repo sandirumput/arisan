@@ -17,7 +17,7 @@ bottom of this file). Everything else is ready to paste as-is.
 
 **Play demo (no wallet):** https://sandirumput.github.io/arisan/
 
-**Tari payment address:** [FILL IN — your Tari (L1 Minotari) address]
+**Tari payment address:** 124Y6c9juhdo6CCk3z4KkJFDyvTsacsN17rFTMhjxuCzdx7iiK4wqRZL8czskx7yUsiP5ww1CGHhydYTZvA2piLoLpC
 
 **Announcement:** [FILL IN — link to your Bluesky / Reddit / Medium / YouTube announcement post]
 
